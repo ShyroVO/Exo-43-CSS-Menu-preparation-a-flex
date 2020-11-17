@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    background: snow;
+    box-shadow: darkgray 0 0 2rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    position: fixed;
+}
+
+nav li {
+    display: inline-block;
+    border: solid darkgray 0.2rem;
+    border-radius: 0.5rem;
+}
+
+nav, h1 {
+    margin: 0.8rem;
+}
+
+nav {
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
