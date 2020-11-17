@@ -19,7 +19,7 @@ header {
     position: fixed;
 }
 
-nav li {
+nav a, nav label {
     display: inline-block;
     border: solid darkgray 0.2rem;
     border-radius: 0.5rem;
@@ -35,7 +35,7 @@ nav {
     width: 100%;
 }
 
-.MenuTel {
+nav label {
     visibility: hidden;
     position: absolute;
 }
@@ -43,6 +43,10 @@ nav {
 a {
     text-decoration-line: none;
     color: black;
+}
+
+nav a:hover, nav label:hover {
+    background: lightsteelblue;
 }
 
 @media screen and (max-width: 300px) {
@@ -58,15 +62,22 @@ a {
         box-shadow: darkgray 0 0.5rem 1rem;
     }
 
-    nav li {
+    nav label {
+        position: unset;
+        visibility: visible;
+    }
+
+    nav a, nav label {
         width: 100%;
         border-radius: unset;
         background: snow;
     }
 
-    .MenuTel {
-        visibility: visible;
-        position: unset;
+    nav a {
+        display: none;
     }
 
+    nav:hover a {
+        display: block;
+    }
 }
