@@ -14,7 +14,6 @@ header {
     text-align: center;
     background: snow;
     box-shadow: darkgray 0 0 2rem;
-    padding: 0.5rem;
     margin-top: 1rem;
     font-size: 1rem;
     position: fixed;
@@ -24,17 +23,50 @@ nav li {
     display: inline-block;
     border: solid darkgray 0.2rem;
     border-radius: 0.5rem;
+    padding: 0.5rem;
 }
 
-nav, h1 {
-    margin: 0.8rem;
+h1 {
+    margin: 1rem;
 }
 
 nav {
     font-size: 0.9rem;
+    width: 100%;
+}
+
+.MenuTel {
+    visibility: hidden;
+    position: absolute;
 }
 
 a {
     text-decoration-line: none;
     color: black;
+}
+
+@media screen and (max-width: 300px) {
+    header {
+        height: 4rem;
+    }
+
+    h1 {
+        margin: 0.8rem;
+    }
+
+    nav {
+        box-shadow: darkgray 0 0.5rem 1rem;
+    }
+
+    nav li {
+        width: 100%;
+        border-radius: unset;
+        background: snow;
+    }
+
+    .MenuTel {
+        visibility: visible;
+        position: unset;
+    }
+
 }
