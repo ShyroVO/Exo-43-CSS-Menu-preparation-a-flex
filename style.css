@@ -80,4 +80,8 @@ nav a:hover, nav label:hover {
     nav:hover a {
         display: block;
     }
+
+    nav:hover label i {
+        transform: rotate(90deg);
+    }
 }
